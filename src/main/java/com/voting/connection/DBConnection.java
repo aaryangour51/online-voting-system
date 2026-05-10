@@ -6,14 +6,11 @@ import java.sql.SQLException;
 
 public class DBConnection {
 
-    // Replace with your Railway public host and port
     private static final String URL =
-            "jdbc:mysql://YOUR_PUBLIC_HOST:YOUR_PUBLIC_PORT/railway?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+            "jdbc:mysql://yamabiko.proxy.rlwy.net:30832/railway?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
 
-    // Railway MySQL username
     private static final String USER = "root";
 
-    // Railway MySQL password
     private static final String PASSWORD = "787977";
 
     static {
