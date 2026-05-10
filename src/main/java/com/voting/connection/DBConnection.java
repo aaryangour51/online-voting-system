@@ -1,15 +1,20 @@
 package com.voting.connection;
 
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/voting_system";
+    // Replace with your Railway public host and port
+    private static final String URL =
+            "jdbc:mysql://YOUR_PUBLIC_HOST:YOUR_PUBLIC_PORT/railway?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+
+    // Railway MySQL username
     private static final String USER = "root";
-    private static final String PASSWORD = "787977";  // Change to your MySQL password
+
+    // Railway MySQL password
+    private static final String PASSWORD = "787977";
 
     static {
         try {
